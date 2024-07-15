@@ -1,0 +1,217 @@
+
+.destination-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 50px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+.destination-container h1 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.destination-container p {
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.destination-container h2 {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+.search-container {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+.search-container input {
+  width: 80%;
+  padding: 10px 15px;
+  border-radius: 25px;
+  border: 2px solid #ccc;
+  font-size: 1rem;
+}
+
+.search-container .search-button {
+  position: absolute;
+  right: 10%;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #fdb813;
+  border: none;
+  border-radius: 50%;
+  padding: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-container .search-button img {
+  width: 20px;
+  height: 20px;
+}
+
+.destination-container button {
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 25px;
+  transition: background-color 0.3s ease;
+}
+
+.destination-container .adventure-button {
+  background-color: #fdb813;
+  font-size: 1.2rem;
+  padding: 15px 30px;
+}
+
+.destination-container button:hover {
+  background-color: #0056b3;
+}
+
+.loading,
+.error {
+  font-size: 1.2rem;
+  color: #888;
+  margin-top: 20px;
+}
+
+.decorative-element {
+  position: absolute;
+}
+
+.decorative-element img {
+  width: 100px;
+  height: auto;
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+  .destination-container {
+    padding: 40px;
+  }
+
+  .destination-container h1 {
+    font-size: 2rem;
+  }
+
+  .destination-container p,
+  .destination-container h2 {
+    font-size: 1.5rem;
+  }
+
+  .search-container input {
+    width: 70%;
+  }
+}
+
+@media (max-width: 992px) {
+  .destination-container {
+    padding: 30px;
+  }
+
+  .destination-container h1 {
+    font-size: 1.8rem;
+  }
+
+  .destination-container p,
+  .destination-container h2 {
+    font-size: 1.2rem;
+  }
+
+  .search-container input {
+    width: 60%;
+  }
+
+  .search-container .search-button {
+    right: 5%;
+  }
+
+  .destination-container .adventure-button {
+    padding: 10px 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .destination-container {
+    padding: 20px;
+  }
+
+  .destination-container h1 {
+    font-size: 1.5rem;
+  }
+
+  .destination-container p,
+  .destination-container h2 {
+    font-size: 1rem;
+  }
+
+  .search-container input {
+    width: 80%;
+    font-size: 0.9rem;
+  }
+
+  .search-container .search-button {
+    padding: 8px;
+  }
+
+  .destination-container button {
+    padding: 8px 15px;
+    font-size: 0.9rem;
+  }
+
+  .destination-container .adventure-button {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .destination-container {
+    padding: 10px;
+  }
+
+  .destination-container h1 {
+    font-size: 1.2rem;
+  }
+
+  .destination-container p,
+  .destination-container h2 {
+    font-size: 0.8rem;
+  }
+
+  .search-container input {
+    width: 70%;
+    font-size: 0.8rem;
+  }
+
+  .search-container .search-button {
+    padding: 5px;
+    right: 2%;
+  }
+
+  .destination-container button {
+    padding: 5px 10px;
+    font-size: 0.8rem;
+  }
+
+  .destination-container .adventure-button {
+    font-size: 0.9rem;
+    padding: 8px 15px;
+  }
+}

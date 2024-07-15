@@ -1,38 +1,150 @@
-.App {
-  text-align: center;
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  position: fixed;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1, h2 {
+  color: #333;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+/* Media Queries for Various Sections */
+
+/* Hero Section */
+@media (max-width: 768px) {
+  .hero-section {
+    flex-direction: column;
+  }
+
+  .hero-content {
+    text-align: center;
+  }
+
+  .hero-image img {
+    max-width: 80%;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* Search Section */
+@media (max-width: 768px) {
+  .search-section {
+    flex-direction: column;
+    padding: 20px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .search-container {
+    max-width: 100%;
+    margin: 10px 0;
+  }
+
+  .search-container input {
+    width: 90%;
+  }
+
+  .search-container .search-button {
+    right: 5%;
+    top: 55%;
+    transform: translateY(-50%);
+  }
+}
+
+/* Destination Section */
+@media (max-width: 768px) {
+  .destination-container {
+    padding: 20px;
+  }
+
+  .destination-container h1 {
+    font-size: 1.8rem;
+  }
+
+  .destination-container p {
+    font-size: 1rem;
+  }
+
+  .destination-container h2 {
+    font-size: 1.5rem;
+  }
+
+  .search-container input {
+    width: 70%;
+  }
+
+  .search-container .search-button {
+    right: 5%;
+  }
+
+  .destination-container button {
+    padding: 8px 15px;
+    font-size: 0.9rem;
+  }
+
+  .destination-container .adventure-button {
+    padding: 10px 20px;
+    font-size: 1rem;
+  }
+}
+
+/* Footer */
+@media (max-width: 768px) {
+  footer {
+    padding: 14px;
+    font-size: 0.8rem;
+  }
+}
+
+/* Additional adjustments for smaller screens */
+@media (max-width: 576px) {
+  .hero-section {
+    padding: 10px;
+  }
+
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .hero-image img {
+    max-width: 70%;
+  }
+
+  .search-section {
+    padding: 10px;
+  }
+
+  .search-container input {
+    width: 80%;
+  }
+
+  .search-container .search-button {
+    padding: 8px;
+  }
+
+  .destination-container {
+    padding: 10px;
+  }
+
+  .destination-container h1 {
+    font-size: 1.5rem;
+  }
+
+  .destination-container p,
+  .destination-container h2 {
+    font-size: 0.9rem;
+  }
+
+  .destination-container button {
+    padding: 5px 10px;
+    font-size: 0.8rem;
+  }
+
+  .destination-container .adventure-button {
+    padding: 8px 15px;
+    font-size: 0.9rem;
+  }
+
+  footer {
+    padding: 12px;
+    font-size: 0.7rem;
   }
 }

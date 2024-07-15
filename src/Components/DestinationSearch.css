@@ -1,0 +1,221 @@
+/* Default styles */
+.search-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+  position: relative;
+}
+
+.search-container1 {
+  text-align: center;
+  max-width: 50%;
+  position: relative;
+}
+
+.search-container1 h2 {
+  font-size: 3.1rem; /* Adjust as needed */
+  font-weight: 600;
+}
+
+.search-container1 h4 {
+  font-size: 1.8rem; /* Adjust as needed */
+  font-weight: 600;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 25px;
+  padding: 5px 10px;
+  max-width: 400px; /* Adjust max-width as needed */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%; /* Ensure the container spans the full width */
+}
+
+.search-container input {
+  border: none;
+  outline: none;
+  flex: 1;
+  padding: 12px; /* Adjust padding as needed */
+  font-size: 1rem; /* Adjust font size as needed */
+  border-radius: 5px; /* Rounded corners */
+  border: 1px solid #ddd; /* Light border */
+  background-color: #f9f9f9; /* Background color */
+  transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+  width: 100%; /* Ensure the input fills the container */
+}
+
+.search-container input:focus {
+  border-color: #007bff; /* Border color on focus */
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); /* Focus shadow */
+}
+
+.search-container input::placeholder {
+  color: #ccc; /* Placeholder text color */
+}
+
+.search-container img {
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  width: 50px;
+  height: 50px;
+}
+
+.search-button {
+  border: none;
+  border-radius: 50%;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-button img {
+  width: 20px;
+  height: 20px;
+}
+
+.d1 {
+  width: 60%;
+  height: 60%;
+  position: absolute;
+  top: -10px;
+  left: 0;
+  z-index: 0;
+}
+
+.d1 img {
+  width: 30%;
+  height: 120px;
+  display: inline;
+  top: 0;
+  left: 0;
+  position: relative;
+  z-index: 1;
+}
+
+.d2 {
+  width: 60px;
+  height: 90px;
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  left: -5;
+}
+
+.cycle-image img {
+  width: 110%;
+  z-index: 1;
+  font-weight: bold;
+  position: relative;
+  animation: cycleMove 10s linear infinite;
+}
+
+@keyframes cycleMove {
+  0% {
+    left: 0;
+  }
+  50% {
+    left: calc(100% - 400px);
+  }
+  100% {
+    left: 0;
+  }
+}
+
+.b1 {
+  width: 30px;
+  height: 40px;
+  position: relative;
+  animation: blink 1s infinite;
+}
+
+.b1 img {
+  top: 10px;
+  width: 130px;
+  height: 135px;
+}
+
+.b2 {
+  right: 60%;
+  width: 20%;
+  height: 30%;
+  position: relative;
+  animation: blink 1s infinite;
+}
+
+.b2 img {
+  top: 10px;
+  left: 70%;
+  width: 100px;
+  height: 135px;
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+  .search-container1 h2 {
+    font-size: 2.5rem;
+  }
+
+  .search-container1 h4 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .search-section {
+    flex-direction: column;
+    padding: 30px;
+    height: auto;
+  }
+
+  .search-container1 {
+    max-width: 100%;
+  }
+
+  .search-container {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .search-container1 h2 {
+    font-size: 2rem;
+  }
+
+  .search-container1 h4 {
+    font-size: 1.2rem;
+  }
+
+  .search-container input {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .search-container1 h2 {
+    font-size: 1.5rem;
+  }
+
+  .search-container1 h4 {
+    font-size: 1rem;
+  }
+
+  .search-container input {
+    font-size: 0.8rem;
+  }
+}

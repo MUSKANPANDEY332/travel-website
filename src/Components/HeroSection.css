@@ -1,0 +1,132 @@
+/* HeroSection.css */
+
+.hero-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+  background: linear-gradient(rgba(226, 225, 232, 0.7), rgba(219, 219, 225, 0.7)), url('../assets/images/bg-side-back.png');
+  animation: mymove 10s;
+  animation-fill-mode: forwards;
+  height: 100vh;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.hero-content {
+  max-width: 50%;
+  z-index: 1; /* Ensure content is above images */
+}
+
+.hero-content h1 {
+  font-size: 3.1rem;
+  font-weight: 600;
+}
+
+.hero-image {
+  position: relative;
+  width: 50%;
+}
+
+.hero-image img {
+  width: 82%;
+  z-index: 1;
+}
+
+.hero-context {
+  text-align: center;
+  max-width: 30%;
+}
+
+.hero-assest1 img {
+  width: 180px;
+  height: 200px;
+  position: absolute;
+  top: 290px;
+  right: 50%;
+  transform: translateX(50%);
+}
+
+.hero-assest2 img {
+  width: 20%;
+  height: auto;
+  position: absolute;
+  top: 430px;
+  right: 0;
+}
+
+.hero-assest3 img {
+  width: 12%;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.hero-assest4 img {
+  width: 12%;
+  height: auto;
+  position: absolute;
+  top: 30px;
+  left: 0;
+}
+
+.hero-assest5 img {
+  width: 220px;
+  height: 150px;
+  position: absolute;
+  top: 450px;
+  left: 0;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin: 20px 0;
+}
+
+h3 .dark-arrow {
+  width: 20px;
+  height: 50px;
+  margin-left: 5px;
+  vertical-align: middle;
+}
+
+/* Animation for cycling */
+.cycle-animation {
+  position: relative;
+  width: 100%;
+  animation: moveCycle 5s linear;
+}
+
+@keyframes moveCycle {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+@media (max-width: 992px) {
+  .hero-content {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-content h1 {
+    font-size: 1.5rem;
+  }
+}

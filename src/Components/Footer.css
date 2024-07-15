@@ -1,0 +1,33 @@
+footer {
+  background: #f8f8f8;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+  footer {
+    padding: 18px;
+  }
+}
+
+@media (max-width: 992px) {
+  footer {
+    padding: 16px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 768px) {
+  footer {
+    padding: 14px;
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 576px) {
+  footer {
+    padding: 12px;
+    font-size: 0.7rem;
+  }
+}
